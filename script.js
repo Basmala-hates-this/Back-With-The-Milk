@@ -1,6 +1,6 @@
 const button = document.getElementById('fetch-btn');
 const display = document.getElementById('message-container');
-const metaDisplay = document.getElementById('meta-container');
+// const metaDisplay = document.getElementById('meta-container');
 
 button.addEventListener('click', async () => {
     button.disabled = true;
@@ -21,10 +21,10 @@ button.addEventListener('click', async () => {
         
         // The joke is stored in the 'joke' field....joke on u my life is a joke...sorry
         display.innerText = data.joke;
-        metaDisplay.innerHTML = `
-            <span>the id of the joke(second get): ${data.id} </span> <br>
-            <span>the status of http replay(third result): ${data.status}</span>
-        `;
+        // metaDisplay.innerHTML = `
+        //     <span>the id of the joke(second get): ${data.id} </span> <br>
+        //     <span>the status of http replay(third result): ${data.status}</span>
+        // `;
        
 
     } catch (error) {
