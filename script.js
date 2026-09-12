@@ -5,7 +5,7 @@ const display = document.getElementById('message-container');
 button.addEventListener('click', async () => {
     button.disabled = true;
     display.innerText = "Scanning the Dad-abase...";
-    metaDisplay.innerText = "";
+    // metaDisplay.innerText = "";
 
     
     
